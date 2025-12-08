@@ -1,4 +1,4 @@
-# Challenge #1: Filter the detective gifts 🎁
+# Challenge #1: 🎁 Filter the detective gifts 
 
 **Santa** 🎅 has received a list of gifts, but some are defective. A gift is defective if its name contains the `#` character.
 

@@ -1,4 +1,4 @@
-# Challenge 4: Decipher the santa pin 🧮
+# Challenge 4: 🧮 Decipher the santa pin 
 
 The elves have found the **encrypted code** that protects the door to Santa’s workshop 🔐. The PIN has **4 digits**, and it is hidden inside blocks like these:
 

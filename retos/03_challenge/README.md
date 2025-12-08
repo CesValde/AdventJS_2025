@@ -1,4 +1,4 @@
-# Challenge 2: Help the Intern 👶
+# Challenge 3: 👶 Help the Intern 
 
 In Santa’s workshop there’s an intern elf who is learning to wrap gifts 🎁.
 

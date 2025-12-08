@@ -1,35 +1,55 @@
-It’s time to decorate the **Christmas tree** 🎄! Write a function that receives:
+# Challenge 6: 🧤 Matching gloves
 
-- `height` → the height of the tree (number of rows).
-- `ornament` → the ornament character (for example, `"o"` or `"@"`).
-- `frequency` → how often (in asterisk positions) the ornament appears.
-The tree is drawn with asterisks `*`, but every `frequency` positions, the asterisk is replaced by the ornament.
+In Santa's workshop, the elves have found a mountain of magical gloves in complete disarray. Each glove is described by two values:
 
-The position counting starts at 1, from the top to the bottom, left to right. If `freuenqcy` is 2, the ornaments appear in positions 2, 4, 6, etc.
+- `hand`: indicates whether it is a left (`L`) or right (`R`) glove
+- `color`: the color of the glove (string)
 
-The tree must be centered and have a one-line trunk `#` at the end.
+Your task is to help them **match gloves**: A valid pair is a left glove and a right glove **of the same color**.
+
+You must return **a list with the colors of all the pairs found**. Keep in mind that **there may be several pairs of the same color**. The order is determined by whichever pair can be made first.
 
 🧩 **Examples**
 
 ```js
-drawTree(5, 'o', 2)
-//     *
-//    o*o
-//   *o*o*
-//  o*o*o*o
-// *o*o*o*o*
-//     #
+const gloves = [
+  { hand: 'L', color: 'red' },
+  { hand: 'R', color: 'red' },
+  { hand: 'R', color: 'green' },
+  { hand: 'L', color: 'blue' },
+  { hand: 'L', color: 'green' }
+]
 
-drawTree(3, '@', 3)
-//   *
-//  *@*
-// *@**@
-//   #
+matchGloves(gloves)
+// ["red", "green"]
 
-drawTree(4, '+', 1)
-//    +
-//   +++
-//  +++++
-// +++++++
-//    #
+const gloves2 = [
+  { hand: 'L', color: 'gold' },
+  { hand: 'R', color: 'gold' },
+  { hand: 'L', color: 'gold' },
+  { hand: 'L', color: 'gold' },
+  { hand: 'R', color: 'gold' }
+]
+
+matchGloves(gloves2)
+// ["gold", "gold"]
+
+const gloves3 = [
+  { hand: 'L', color: 'red' },
+  { hand: 'R', color: 'green' },
+  { hand: 'L', color: 'blue' }
+]
+
+matchGloves(gloves3)
+// []
+
+const gloves4 = [
+  { hand: 'L', color: 'green' },
+  { hand: 'L', color: 'red' },
+  { hand: 'R', color: 'red' },
+  { hand: 'R', color: 'green' }
+]
+
+matchGloves(gloves4)
+// ['red', 'green']
 ```

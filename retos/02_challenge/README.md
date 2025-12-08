@@ -1,4 +1,4 @@
-# Challenge 2: Filter the detective gifts 🎁
+# Challenge 2: 🏭 Manufacture the toys 
 
 Santa's factory has started receiving the toy production list.
 Each line indicates which toy must be manufactured and how many units.
